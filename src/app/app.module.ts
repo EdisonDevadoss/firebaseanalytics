@@ -7,6 +7,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { FirebaseAnalytics } from '@ionic-native/firebase-analytics';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -23,6 +25,7 @@ import { HomePage } from '../pages/home/home';
   ],
   providers: [
     StatusBar,
+    FirebaseAnalytics,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
